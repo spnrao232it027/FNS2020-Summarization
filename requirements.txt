@@ -8,3 +8,5 @@ huggingface
 tensorflow
 jupyter
 notebook
+rouge-score
+torch
