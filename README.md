@@ -33,14 +33,15 @@
 
 - Set up `.env` file
   
-```TRAINING_DIR="./fns2020_dataset/training/"
-VALIDATION_DIR="./fns2020_dataset/validation/"
-TR_AR="./fns2020_dataset/training/annual_reports/"
-TR_GS="./fns2020_dataset/training/gold_summaries/"
-VAL_AR="./fns2020_dataset/validation/annual_reports/"
-VAL_GS="./fns2020_dataset/validation/gold_summaries/"
-TARGET_DIR="./generated_summary/"
-```
+    ```
+    TRAINING_DIR="./fns2020_dataset/training/"
+    VALIDATION_DIR="./fns2020_dataset/validation/"
+    TR_AR="./fns2020_dataset/training/annual_reports/"
+    TR_GS="./fns2020_dataset/training/gold_summaries/"
+    VAL_AR="./fns2020_dataset/validation/annual_reports/"
+    VAL_GS="./fns2020_dataset/validation/gold_summaries/"
+    TARGET_DIR="./generated_summary/"
+    ```
 
 
 
@@ -68,27 +69,33 @@ There are two ways to run the code :-
 1) For 1 file (used to test if the code is working, takes less time)
 2) For all files in a directory (takes a lot of time)
 
-# For 1 File
-> Open 'FileDemo.ipynb'
-> Put your text that you want to summarize in input valiable and its gold summary
+#### For 1 File
+> Open `BART-Demo-SingleFile.ipynb`
+
+> Put your text that you want to summarize in `input` variable and its gold summary in `gold` variable.
 > Run all the cells, the input will automatically get preprocessed and summarised
 > You can view its Rouge Score at the bottom
 > Generating Summary takes a lot of time so be patient
 
-# For all files
+#### For all files
+> `BART- CompleteSummary-All_Files.ipynb`
+
+
 > Create a folder name `annual_reports`.
-> Put all the text files for which you want to create summary in 'annual_reports' directory
-> This code will create dataframe and will save it in 'output.csv'
+> Put all the text files for which you want to create summary in `annual_reports` directory
+> This code will create dataframe and will save it in `output.csv`
 > Run all the cells and this will generate summaries for all the files in a dataframe
 
 
 
 ## Abstravtive Summary
-Launch the notebook from terminal in VSCode. 
+Launch the notebook named `T5-AbstractiveSummary-All_Files.ipynb` from terminal in VSCode. 
 
 While running the ipynb file, choose the python environment `mypython310`
 
-Once the file is run, it will generate the summary files in `TARGET_DIR`.
+Once the file is run, it will generate the summary files for all the annual reports in `VAL_AR` and store the computed summary in `TARGET_DIR`.
+
+> NB: The last two cells in `T5-AbstractiveSummary-All_Files.ipynb` file illustrate running the code on single file and computing rouge score for that particular result.
 
 ## Evaluating our summaries.
 
