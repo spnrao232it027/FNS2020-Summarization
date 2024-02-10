@@ -63,7 +63,28 @@ Install the necessary libraries required for this code to run.
 
 `pip install -r requirements.txt`
 
+## Extractive Summary
 
+There are two ways to run the code :-
+1) For 1 file (used to test if the code is working, takes less time)
+2) For all files in a directory (takes a lot of time)
+
+# For 1 File
+> Open 'FileDemo.ipynb'
+> Put your text that you want to summarize in input valiable and its gold summary
+> Run all the cells, the input will automatically get preprocessed and summarised
+> You can view its Rouge Score at the bottom
+> Generating Summary takes a lot of time so be patient
+
+# For all files
+> Create a folder name `annual_reports`.
+> Put all the text files for which you want to create summary in 'annual_reports' directory
+> This code will create dataframe and will save it in 'output.csv'
+> Run all the cells and this will generate summaries for all the files in a dataframe
+
+
+
+## Abstravtive Summary
 Launch the notebook from terminal in VSCode. 
 
 While running the ipynb file, choose the python environment `mypython310`
