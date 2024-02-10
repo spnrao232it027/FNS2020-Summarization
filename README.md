@@ -32,16 +32,15 @@
     We don't provide the dataset.
 
 - Set up `.env` file
-<br>
-    ```
-    TRAINING_DIR="./fns2020_dataset/training/"
-    VALIDATION_DIR="./fns2020_dataset/validation/"
-    TR_AR="./fns2020_dataset/training/annual_reports/"
-    TR_GS="./fns2020_dataset/training/gold_summaries/"
-    VAL_AR="./fns2020_dataset/validation/annual_reports/"
-    VAL_GS="./fns2020_dataset/validation/gold_summaries/"
-    TARGET_DIR="./generated_summary/"
-    ```
+  
+```TRAINING_DIR="./fns2020_dataset/training/"
+VALIDATION_DIR="./fns2020_dataset/validation/"
+TR_AR="./fns2020_dataset/training/annual_reports/"
+TR_GS="./fns2020_dataset/training/gold_summaries/"
+VAL_AR="./fns2020_dataset/validation/annual_reports/"
+VAL_GS="./fns2020_dataset/validation/gold_summaries/"
+TARGET_DIR="./generated_summary/"
+```
 
 
 
